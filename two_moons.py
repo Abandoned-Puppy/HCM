@@ -129,8 +129,6 @@ def train_model(
 # 4. Plotting utilities
 # --------------------
 def plot_d_vectors_with_ambiguous(d_test: torch.Tensor, ambiguous_indices: np.ndarray):
-    # mpl.rcParams["font.family"] = "Times New Roman"
-    # mpl.rcParams["font.size"] = 26
 
     theta = np.linspace(0, 2 * np.pi, 100)
     unit_circle_x = np.cos(theta)
@@ -219,7 +217,6 @@ def plot_uncertainty_vs_boundary_distance(
     d_test = d_test.cpu()
     R_test = R_test.cpu()
 
-    # Uncertainty score u(x) = | ||R * d|| - 1 |
     d_norms = torch.norm(R_test * d_test, dim=1)
     u_score = torch.abs(d_norms - 1).numpy()
 
@@ -239,7 +236,6 @@ def plot_uncertainty_vs_boundary_distance(
 
     Z = Z.reshape(xx.shape)
 
-    # Extract boundary points
     boundary_mask = np.zeros_like(Z, dtype=bool)
     boundary_mask[:-1, :] |= Z[:-1, :] != Z[1:, :]
     boundary_mask[:, :-1] |= Z[:, :-1] != Z[:, 1:]
