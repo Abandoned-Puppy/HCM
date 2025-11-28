@@ -7,6 +7,8 @@ including both:
 
 - 1D regression toy example showing how HCM applies to scalar targets
 
+- Two Moons (Updated!)
+
 This codebase is released to support reproducibility for anonymous peer review.
 All scripts are self-contained and lightweight.
 
@@ -178,4 +180,5 @@ Available modes:
 
 Output:
 >hcm_1d_result.png
+
 >Example band visualization (mean ± 1σ, 2σ, 3σ) is automatically saved.
