@@ -192,5 +192,8 @@ This script demonstrates how HCM applies to 2-dimensional regression.
 
 Output:
 >Two_moons1.png (Rpresentation of $\hat{d}$ on the unit circle)
+>
 >Two_moons2.png (The same samples projected back into the input space)
+>
 >Tow_moons3.png (Scatter plot of $u(x)$ against distance to the decision boundary)
+
