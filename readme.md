@@ -9,7 +9,6 @@ including both:
 
 - Two Moons (Updated!)
 
-This codebase is released to support reproducibility for anonymous peer review.
 All scripts are self-contained and lightweight.
 
 ---
@@ -164,8 +163,7 @@ data/val/
 ---
 ## 1D Regression Toy Example
 
-This script demonstrates how HCM applies to 1-dimensional regression,
-addressing the reviewer’s question on how hyperspherical decomposition works when the target is a scalar.
+This script demonstrates how HCM applies to 1-dimensional regression.
 
 >python Toy_example.py --mode mixture --epochs 500
 
@@ -185,6 +183,14 @@ Output:
 >Example band visualization (mean ± 1σ, 2σ, 3σ) is automatically saved.
 
 
+---
+## Two Moons
 
+This script demonstrates how HCM applies to 2-dimensional regression.
 
+>python two_moons.py
 
+Output:
+>Two_moons1.png (Rpresentation of $\hat{d}$ on the unit circle)
+>Two_moons2.png (The same samples projected back into the input space)
+>Tow_moons3.png (Scatter plot of $u(x)$ against distance to the decision boundary)
