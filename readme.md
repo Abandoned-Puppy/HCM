@@ -50,18 +50,18 @@ thop>=0.1.1.post2209072238 # optional (only for FLOPs/MACs)
 
 ## File Structure
 
-├── hcm_cifar10.py              # Full training + OOD evaluation + runtime instrumentation
-├── Toy_example.py              # 1D regression example (scalar target case)
-├── two_moons.py                # Two moons example
-├── README.md
-├── requirements.txt
-└── data/                       # Dataset directory (created manually)
-    ├── cifar-10-batches-py/    # Automatically downloaded by torchvision
-    ├── cifar-100-python/       # Automatically downloaded
-    ├── svhn/                   # Automatically downloaded
-    ├── dtd/                    # Automatically downloaded
-    ├── tiny-imagenet-200/      # Manual download required (see below)
-    └── val/                    # Places365 val folder (manual)
+* `hcm_cifar10.py` (Full training + OOD evaluation + runtime instrumentation)
+* `Toy_example.py` (1D regression example, scalar target case)
+* `two_moons.py` (Two moons example)
+* `README.md`
+* `requirements.txt`
+* `data/` (Dataset directory - created manually)
+    * `cifar-10-batches-py/` (Automatically downloaded by torchvision)
+    * `cifar-100-python/` (Automatically downloaded)
+    * `svhn/` (Automatically downloaded)
+    * `dtd/` (Automatically downloaded)
+    * `tiny-imagenet-200/` (Manual download required)
+    * `val/` (Places365 val folder - manual)
 
 ---
 
@@ -183,6 +183,7 @@ Output:
 >hcm_1d_result.png
 
 >Example band visualization (mean ± 1σ, 2σ, 3σ) is automatically saved.
+
 
 
 
